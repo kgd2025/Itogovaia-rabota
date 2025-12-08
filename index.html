@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Природа Камчатки — Земля Огня и Льда</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Иконка бургера -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка — БЕЛАЯ -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="breadcrumb">
+                <a href="#">О Камчатке</a> &gt; <span>Природа</span>
+            </div>
+
+            <!-- Десктопное меню -->
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#volcanoes">Вулканы</a></li>
+                    <li><a href="#lakes">Озера</a></li>
+                    <li><a href="#wildlife">Животные</a></li>
+                    <li><a href="#contact">Связаться</a></li>
+                </ul>
+            </nav>
+
+            <!-- Бургер-кнопка -->
+            <div class="burger-menu" id="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Мобильное меню (изначально скрыто) -->
+        <nav class="nav-mobile" id="mobile-nav">
+            <ul>
+                <li><a href="#volcanoes">Вулканы</a></li>
+                <li><a href="#lakes">Озера</a></li>
+                <li><a href="#wildlife">Животные</a></li>
+                <li><a href="#contact">Связаться</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Герой-секция — с фото вулканов -->
+    <section id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('images/header-volcanoes.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Камчатская природа</h1>
+            <p>Прекрасная природа Камчатки сочетает в себе горные пейзажи, лесные ландшафты и уникальную фауну. Большое количество вулканов определяет естественный ход природной жизни. Наличие гейзеров и термальных источников придает своеобразие.</p>
+            <a href="#volcanoes" class="btn">Узнать больше</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="volcanoes" class="section with-border-top">
+            <div class="container">
+                <h2 class="section-title">Вулканы Камчатки</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="images/volcano1.jpg" alt="Снежный вулкан">
+                        <h3>Величественные пики</h3>
+                        <p>Более 300 вулканов, из которых около 30 активны. Это самый вулканически активный регион России.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/volcano2.jpg" alt="Горная река и вулкан">
+                        <h3>Реки вулканов</h3>
+                        <p>Бурные реки, текущие по склонам вулканов, создают неповторимые пейзажи — от зелёных долин до каменных русел.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lakes" class="section bg-light with-border-top">
+            <div class="container">
+                <h2 class="section-title">Голубые жемчужины</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="images/lake.jpg" alt="Озеро с вулканом на заднем плане">
+                        <h3>Озеро Кроноцкое</h3>
+                        <p>Одно из самых красивых озёр Камчатки, окружённое горами и лесами. Идеально для рыбалки и фотосессий.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/seals.jpg" alt="Тюлени на берегу">
+                        <h3>Тюлени у воды</h3>
+                        <p>На побережье Камчатки обитают тысячи тюленей — они отдыхают на скалах и причалах, создавая живописные картины.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wildlife" class="section with-border-top">
+            <div class="container">
+                <h2 class="section-title">Животные Камчатки</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="images/bear1.jpg" alt="Медведь у реки">
+                        <h3>Медведи-рыболовы</h3>
+                        <p>Бурые медведи Камчатки — одни из крупнейших в мире. Они ловят лосося в реках и являются символом дикой природы региона.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/bear2.jpg" alt="Медведь у озера с вулканом">
+                        <h3>Медведи и вулканы</h3>
+                        <p>Наблюдайте за медведями на фоне снежных вулканов — это уникальное зрелище, которое можно увидеть только здесь.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section with-border-top">
+            <div class="container">
+                <h2 class="section-title">Готовы к путешествию?</h2>
+                <p>Подпишитесь на нашу рассылку, чтобы получать советы по путешествиям по Камчатке и новые фото!</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit" class="btn">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Природа Камчатки. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript для бургера -->
+    <script>
+        const burger = document.getElementById('burger');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        if (burger && mobileNav) {
+            burger.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+            });
+
+            document.querySelectorAll('#mobile-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
